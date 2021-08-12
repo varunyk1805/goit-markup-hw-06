@@ -382,6 +382,8 @@ ul {
 
 .feature-icon-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -390,9 +392,8 @@ ul {
   background-color: var(--second-background-color);
 }
 
-.feature-icon {
-  margin: auto;
-}
+/* .feature-icon {
+} */
 
 .feature-title {
   margin-bottom: 10px;
@@ -441,22 +442,21 @@ ul {
 }
 
 .services-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0;
   bottom: 0;
 
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 70px;
 
   color: var(--primary-white-color);
   background: var(--services-name-background-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -745,10 +745,12 @@ ul {
 
   width: 100%;
   height: 100%;
+  visibility: visible;
   opacity: 1;
 
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-duration) var(--transition-timing-function);
+  transition: opacity var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
