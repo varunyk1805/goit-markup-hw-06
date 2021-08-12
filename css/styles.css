@@ -268,6 +268,7 @@ ul {
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -304,6 +305,92 @@ ul {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+}
+
+/* Подписка */
+.subscription-box {
+  margin-left: auto;
+}
+
+.subscription {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subscription-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscription-form-input {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
+
+.subscription-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+  cursor: pointer;
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+  background-color: var(--accent-hero-btn-color);
+}
+
+.subscription-btn .icon {
+  margin-left: 10px;
 }
 
 /* Герой */
