@@ -372,16 +372,44 @@
                     </li>
                 </ul>
             </div>
+                <form>
+                    <p>Подпишитесь на рассылку</p>
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <button type="submit">Подписаться</button>
+                    </label>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p></p>
             <button type="button" class="modal-btn-close" data-modal-close>
                 <svg width="11" height="11">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
+            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <form action="">
+                <label>Имя
+                    <input type="text" name="name">
+                </label>
+                <label>Телефон
+                    <input type="tel" name="tel">
+                </label>
+                <label>Почта
+                    <input type="email" name="email">
+                </label>
+                <label>Комментарий
+                    <textarea name="comment"  cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" name="policy">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
