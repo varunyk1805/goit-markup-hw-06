@@ -372,51 +372,74 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscription-box">
-                <div class="subscription">
-                    <form class="subscription-form">
-                        <label class="subscription-label">
-                            <span class="subscription-title">Подпишитесь на рассылку</span>
-                            <input class="subscription-form-input" type="email" name="email" placeholder="E-mail">
-                        </label>
-                    </form>
+            <div class="subscription">
+                <form class="subscription-form">
+                    <label class="subscription-label">
+                        <span class="subscription-title">Подпишитесь на рассылку</span>
+                        <input class="subscription-form-input" type="email" name="email" placeholder="E-mail">
+                    </label>
                     <button class="subscription-btn" type="submit">Подписаться
                         <svg class="icon" width="24" height="24">
                             <use href="./images/icons.svg#send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
 
         </div>
     </footer>
+<!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn-close" data-modal-close>
-                <svg width="11" height="11">
+                <svg class="icon" width="11" height="11">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
-            <p>Оставьте свои данные, мы вам перезвоним</p>
-            <form>
-                <label>Имя
-                    <input type="text" name="name">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <label class="modal-label">
+                    Имя
+                    <div class="modal-input-box">
+                        <input class="modal-input" type="text" name="name">
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </div>
                 </label>
-                <label>Телефон
-                    <input type="tel" name="tel">
+                <label class="modal-label">
+                    Телефон
+                    <div class="modal-input-box">
+                    <input class="modal-input" type="tel" name="tel">
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
                 </label>
-                <label>Почта
-                    <input type="email" name="email">
+                <label class="modal-label">
+                    Почта
+                    <div class="modal-input-box">
+                    <input class="modal-input" type="email" name="email">
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </div>
                 </label>
-                <label>Комментарий
-                    <textarea name="comment"  cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <label class="comment-label">
+                    Комментарий
+                    <textarea class="comment-text" name="comment" placeholder="Введите текст"></textarea>
                 </label>
-                <label>
-                    <input type="checkbox" name="policy">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
+                <label class="checkbox-label">
+                    <input class="checkbox-input" type="checkbox" name="policy">Соглашаюсь с рассылкой и принимаю
+                    <a class="policy-link" href="">Условия договора</a>
+                    <svg class="off-checked" width="16" height="15">
+                        <use href="./images/icons.svg#off-checked"></use>
+                    </svg>
+                    <svg class="on-checked" width="16" height="15">
+                        <use href="./images/icons.svg#on-checked"></use>
+                    </svg>
                 </label>
-                <button type="submit">Отправить</button>
+                <button class="modal-btn" type="submit">Отправить</button>
             </form>
         </div>
     </div>
