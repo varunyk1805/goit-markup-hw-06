@@ -1097,7 +1097,7 @@ ul {
   transform: translateY(-50%);
   opacity: 0;
 
-  transition: opacity 5s var(--transition-timing-function);
+  transition: opacity var(--transition-duration) var(--transition-timing-function);
 }
 
 .checkbox-input:checked ~ .on-checked {
