@@ -104,7 +104,6 @@ ul {
 }
 
 .header-logo {
-  display: inline-block;
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -127,8 +126,6 @@ ul {
 }
 
 .nav-link {
-  position: relative;
-
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -143,7 +140,7 @@ ul {
 .nav-link::before {
   content: '';
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
 
   display: block;
@@ -169,7 +166,7 @@ ul {
 .link-current::after {
   content: '';
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
 
   display: block;
@@ -203,10 +200,7 @@ ul {
 }
 
 .nav-link,
-.nav-link,
 .header-contact,
-.header-contact,
-.footer-contact,
 .footer-contact {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
@@ -488,9 +482,6 @@ ul {
   background-color: var(--second-background-color);
 }
 
-/* .feature-icon {
-} */
-
 .feature-title {
   margin-bottom: 10px;
 
@@ -697,7 +688,7 @@ ul {
 }
 
 /* Кнопки портфолио */
-.filter-list {
+/* .filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -741,6 +732,54 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+} */
+
+/* Радиокнопки */
+.radio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-left: 8px;
+  padding-top: 4px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+
+  background-color: var(--second-background-color);
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: box-shadow var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+
+  cursor: pointer;
+}
+
+.radio-label-first {
+  margin-left: 0;
+}
+
+.radio-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio-input:checked + .radio-label {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }

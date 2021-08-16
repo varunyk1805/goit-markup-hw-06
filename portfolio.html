@@ -50,7 +50,7 @@
             <div class="container">
                 <h1 class="visually-hidden">Примеры работ</h1>
     <!-- Кнопки фильтра -->
-                <ul class="list filter-list">
+                <!-- <ul class="list filter-list">
                     <li class="filter-item">
                         <button type="button" class="filter-btn btn-default">Все</button>
                     </li>
@@ -66,7 +66,20 @@
                     <li class="filter-item">
                         <button type="button" class="filter-btn">Маркетинг</button>
                     </li>
-                </ul>
+                </ul> -->
+    <!-- Радиокнопки -->
+                <form class="radio">
+                    <input class="radio-input" id="all" type="radio" name="projects" value="all" checked/>
+                    <label class="radio-label radio-label-first" for="all">Все</label>
+                    <input class="radio-input" id="sites" type="radio" name="projects" value="sites"/>
+                    <label class="radio-label" for="sites">Веб-сайты</label>
+                    <input class="radio-input" id="apps" type="radio" name="projects" value="apps"/>
+                    <label class="radio-label" for="apps">Приложения</label>
+                    <input class="radio-input" id="design" type="radio" name="projects" value="design"/>
+                    <label class="radio-label" for="design">Дизайн</label>
+                    <input class="radio-input" id="marketing" type="radio" name="projects" value="marketing"/>
+                    <label class="radio-label" for="marketing">Маркетинг</label>
+                </form>
     <!-- Примеры работ -->
                 <ul class="list projects-list">
                     <li class="projects-item">
