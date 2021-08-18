@@ -687,56 +687,7 @@ ul {
   color: var(--accent-color);
 }
 
-/* Кнопки портфолио */
-/* .filter-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter-item:not(:first-child) {
-  margin-left: 8px;
-}
-
-.filter-btn {
-  padding-top: 4px;
-  padding-right: 20px;
-  padding-bottom: 4px;
-  padding-left: 20px;
-  border-radius: 4px;
-  border-color: transparent;
-
-  background-color: var(--second-background-color);
-  color: var(--title-text-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function),
-    background-color var(--transition-duration) var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
-
-  cursor: pointer;
-}
-
-.btn-default {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-} */
-
-/* Радиокнопки */
+/* Радиокнопки фильтра */
 .radio {
   display: flex;
   justify-content: center;
